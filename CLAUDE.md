@@ -30,18 +30,19 @@ Nobody has published rigorous numbers on this — the skills ecosystem runs on v
 - **Phase 6:** analysis (Wilson intervals per task, stratified bootstrap for aggregate deltas, effect sizes + CIs, never bare point estimates) + static leaderboard site from results JSON.
 - **Phase 7:** `PROTOCOL.md` finalized (pre-registration), README findings-forward, launch assets.
 
-## Virality doctrine (shapes every phase; framing, not scope creep)
+## Communication principles (shapes every phase; framing, not scope creep)
 
-Benchmarks go viral on a spicy, defensible headline number plus receipts nobody can dismiss.
+Rigorous work travels when the finding is clear and the evidence is one click away. These principles govern how results get communicated. (All example numbers below are hypothetical illustrations — no such results exist.)
 
-1. **Findings-forward, not tool-forward.** README leads with results ("skill X moved pass rate 23% → 71%; skill Y moved nothing but cost 2.1× tokens"); the harness is the footnote. People share findings, not repos.
+1. **Findings-forward, not tool-forward.** Once results exist, the README leads with them (e.g., hypothetically: "skill X moved pass rate 23% → 71%"); the harness is the footnote. People share findings, not repos.
 2. **Receipts, not vibes.** Every leaderboard number links to raw transcripts + exact commit SHAs + model version. One click from claim to evidence. Critics who audit and find it holds become distributors.
 3. **Pre-registration = armor.** PROTOCOL.md locks tasks/graders/metrics before the full run. "We committed to the methodology before seeing results" kills the cherry-picking attack and is itself shareable.
 4. **The negative result is the story.** If most skills show no effect, that IS the finding — "you installed 12 skills; n of them measurably matter." Never bury nulls; nulls with confidence intervals are the product.
 5. **One number per skill.** Leaderboard headline = pass-rate delta with Wilson CI. Tokens/cost/time deltas one click deeper. Complexity kills sharing.
 6. **Cost transparency.** Publish exactly what the full benchmark cost to run. Replication feels possible → reproducibility becomes distribution.
 7. **Shareable units.** Leaderboard renders per-skill cards (OG-image-friendly: skill name, delta, CI, verdict) so a single result travels on X/HN without the whole site.
-8. **Name every effect.** "Dead skill" (no measurable delta), "tax" (worse than control), "carry" (big positive delta). Vocabulary spreads.
+8. **Name every effect.** "Dead skill" (no measurable delta), "tax" (worse than control), "carry" (big positive delta). Defined in PROTOCOL.md at lock time; surfaced publicly only once results exist.
+9. **Claim only what exists.** Future work in future tense; smoke tests never dressed as validation studies; every public number backed by a committed artifact. The receipts practice starts at Phase 0 (`receipts/`), not at launch.
 
 ## Engineering norms
 

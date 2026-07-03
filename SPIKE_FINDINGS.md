@@ -90,6 +90,5 @@ Measured example (trigger-1): 6,243 in / 375 out, 117k cache-read, $0.135, 12.4s
 
 ## Raw artifacts
 
-- Per-run event streams: `transcripts/*.jsonl` (gitignored; regenerate with `python3 harness/spike.py`)
-- Machine-readable run summary: `transcripts/summary.json`
+- Per-run event streams: committed at [`receipts/spike-2026-07-03/`](receipts/spike-2026-07-03/) (one `.jsonl` per run + `summary.json`). Fresh runs write to `transcripts/` (gitignored); regenerate with `python3 harness/spike.py`.
 - Detection reliability: 3/3 trigger detected (all via primary signal), 4/4 negative controls clean, 0 infra failures, 0 degraded runs.
